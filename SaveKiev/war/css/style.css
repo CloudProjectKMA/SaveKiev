@@ -759,8 +759,8 @@
 		#header .button
 		{
 			display: inline-block;
-			border-radius: 50%;
-			width: 4.5em;
+			border-radius: 45%;
+			width: 5.5em;
 			height: 3.5em;
 			line-height: 3.5em;
 			text-align: center;

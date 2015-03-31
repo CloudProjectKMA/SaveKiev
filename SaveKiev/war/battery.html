@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<title>Еко-кафе</title>
+<title>Батарейки</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
@@ -31,7 +31,7 @@
 		<div class="inner">
 			<header>
 				<h1>
-					<a id="logo">Вхід в аккаунт</a>
+					<a id="logo">Батарейки</a>
 				</h1>
 			</header>
 		</div>
@@ -45,18 +45,17 @@
 						<li><a href="food.html">Поїсти</a></li>
 						<li><a href="rest.html">Відпочити</a></li>
 						<li><a href="#">Підменю</a></li>
-						<li><a >Здати -></a>
+						<li><a>Здати -></a>
 							<ul>
-								<li><a  href="battery.html">Батарейки</a></li>
+								<li><a>Батарейки</a></li>
 								<li><a href="#">2</a></li>
 								<li><a href="#">3</a></li>
 								<li><a href="#">4</a></li>
 							</ul></li>
-						
+
 					</ul></li>
 				<li><a href="reg.html">Реєстрація</a></li>
 				<li><a href="signin.html">Вхід</a></li>
-				
 			</ul>
 		</nav>
 
@@ -67,22 +66,59 @@
 	<div class="wrapper style1">
 
 		<section id="features" class="container special">
-			<header>
-				<h2>
-					<a>Увійти в обліковий запис:</a>
-				</h2>
-			</header>
-			
-				<form action="..\src\site\RegisterServlet.java" method="post">
 
-					
-					<label >Електронна пошта:</label><input type="text" name="userEmail" /><br /> <br />
-					<label >Пароль:</label><input type="password" name="userPass" /><br /> <br />
-				 <input type="submit" value="Вхід"/>
-				</form>
-			
-	
-	</section>
+			<div align="center">
+				Чи знаєте ви, якої шкоди завдають навколишньому середовищу
+				батарейки, що викидаються в сміттєве відро? Рано чи пізно, всі вони переходять у непрацездатний стан. І
+				коли приходить час позбавлятися від неробочих елементів живлення,
+				мало хто звертає увагу на значок «не викидати до сміттєвої корзини».
+				А він друкується на кожній батарейці не дарма. Наприклад, одна
+				пальчикова сольова батарейка, викинута на звалище, забруднює важкими
+				металами близько 20 квадратних метрів землі. <br /><br />У сольових
+				батарейках міститься цинк, пасивне вугілля і двоокис марганцю,
+				електроліт з хлориду амонію. Ці речовини потрапляють в землю і
+				грунтові води, завдаючи тим самим невиправної шкоди всьому живому,
+				включаючи людину. Вони потрапляють в організми тварин, у фрукти, які
+				ми їмо самі і даємо нашим дітям, випаровуються у повітря, яким ми
+				дихаємо. <br /><br /> У багатьох країнах фінансуються державні програми з
+				переробки й знешкодження батарейок на спеціальних заводах. Це
+				задоволення не з дешевих, а скоріше з благородних. На жаль, в нашій
+				країні такі програми не передбачені і не фінансуються. <br />
+				
+			<div>
+
+			<header>
+			<p>Тому саме ми
+				маємо брати ініціативу у свої руки та діяти!</p>
+				<h2>
+					<a>тут ти знайдеш місця, де можна здати використані батарейки</a>
+				</h2>
+				<p></p>
+			</header>
+
+			<script>
+				function autoResize(id) {
+					var newheight;
+					var newwidth;
+					if (document.getElementById) {
+						newheight = document.getElementById(id).contentWindow.document.body.scrollHeight;
+						newwidth = document.getElementById(id).contentWindow.document.body.scrollWidth;
+					}
+					document.getElementById(id).height = (newheight) + "px";
+					document.getElementById(id).width = (newwidth) + "px";
+				}
+			</script>
+
+			<IFRAME
+				src="
+				https://www.google.com/maps/d/embed?mid=zmwdP58TtyzM.kVR4pWpX6pXM
+				"
+				width="100%" height="700px" id="iframe1"
+				onLoad="autoResize('iframe1');"></iframe>
+
+
+
+		</section>
 	</div>
 
 

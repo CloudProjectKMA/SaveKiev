@@ -354,7 +354,7 @@ form {
 
 form label {
 	display: block;
-	font-weight: 500;
+	font-weight: 600;
 	color: #483949;
 	margin-left: auto;
 	margin-right: auto;
@@ -371,7 +371,7 @@ form input[type="text"], form input[type="email"], form input[type="password"],
 	border: 0;
 	background: #fafafa;
 	width: 60%;
-	border-radius: 0.5em;
+	border-radius: 0.35em;
 	border: solid 1px #E5E5E5;
 	padding: 1em;
 	-moz-transition: background-color 0.35s ease-in-out, border-color 0.35s
@@ -392,7 +392,7 @@ form input[type="text"], form input[type="email"], form input[type="password"],
 }
 
 form textarea {
-	min-height: 9em;
+	min-height: 10em;
 }
 
 form input[type="text"]:focus, form input[type="email"]:focus, form input[type="password"]:focus,

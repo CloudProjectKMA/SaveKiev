@@ -23,6 +23,8 @@ public class RegisterServlet extends HttpServlet {
 		String p = request.getParameter("userPass");
 		String e = request.getParameter("userEmail");
 		String s = request.getParameter("userSex");
+		
+		System.out.println();
 
 		try {
 			DatastoreService datastore = DatastoreServiceFactory

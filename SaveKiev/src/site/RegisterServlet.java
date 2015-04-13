@@ -37,7 +37,7 @@ public class RegisterServlet extends HttpServlet {
 			user.setProperty("E-mail", e);
 			user.setProperty("Sex", s);
 			datastore.put(user);
-		
+		response.sendRedirect("../my.html");
 			//out.print("You are successfully registered...");
 		} catch (Exception e2) {
 			System.out.println(e2);

@@ -20,22 +20,25 @@ public class RegisterServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 
 		String n = request.getParameter("userName");
-		String p = request.getParameter("userPass");
+		String p1 = request.getParameter("userPass1");
+		String p2 = request.getParameter("userPass2");		
 		String e = request.getParameter("userEmail");
 		String s = request.getParameter("userSex");
-		
-		System.out.println();
 
 		try {
 			DatastoreService datastore = DatastoreServiceFactory
 					.getDatastoreService();
 			Entity user = new Entity("User");
 			user.setProperty("Name", n);
-			user.setProperty("Password", p);
+			
+			if(p1.equals(p2)){
+			user.setProperty("Password", p1);}
+			
 			user.setProperty("E-mail", e);
 			user.setProperty("Sex", s);
 			datastore.put(user);
-			out.print("You are successfully registered...");
+		
+			//out.print("You are successfully registered...");
 		} catch (Exception e2) {
 			System.out.println(e2);
 		}

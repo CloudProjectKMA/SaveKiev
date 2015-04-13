@@ -45,17 +45,17 @@
 						<li><a href="food.html">Поїсти</a></li>
 						<li><a href="rest.html">Відпочити</a></li>
 						<li><a href="#">Підменю</a></li>
-						<li><a >Здати -></a>
+						<li><a>Здати -></a>
 							<ul>
-								<li><a  href="battery.html">Батарейки</a></li>
+								<li><a href="battery.html">Батарейки</a></li>
 								<li><a href="#">2</a></li>
 								<li><a href="#">3</a></li>
 								<li><a href="#">4</a></li>
 							</ul></li>
-						
-					
+
+
 					</ul></li>
-				<li><a >Реєстрація</a></li>
+				<li><a>Реєстрація</a></li>
 				<li><a href="signin.html">Вхід</a></li>
 			</ul>
 		</nav>
@@ -69,24 +69,42 @@
 		<section id="features" class="container special">
 			<header>
 				<h2>
-					<a>Ти можеш внести свою частку у місто</a>
+					<a>Стань частиною нашої команди</a>
 				</h2>
 				<p>лише заповни ці поля :)</p>
 			</header>
-			
-				<form action="..\src\site\RegisterServlet.java" method="post">
 
-					<label >Ім'я:</label> <input type="text" name="userName" /> <br /> <br />
-					<label >Пароль:</label><input type="password" name="userPass" /><br /> <br />
-					<label >Електронна пошта:</label><input type="text" name="userEmail" /><br /> <br />
-					<label >Стать:</label><select name="userSex">
-						<option>Чоловік</option>
-						<option>Жінка</option>
-					</select> <br /> <br /> <input type="submit" value="Зареєструватися!"/>
-				</form>
-			
-	
-	</section>
+
+
+			<SCRIPT LANGUAGE="JavaScript">
+				function checkPw(form) {
+					pw1 = form.userPass1.value;
+					pw2 = form.userPass2.value;
+
+					if (pw1 != pw2) {
+						alert("\n Неправильний пароль :(")
+						return false;
+					} else
+						align:center;
+						alert("\n Ви зареєстровані!")
+						return true;
+				}
+			</script>
+			<form action="/reg"  onSubmit="return checkPw(this)" method="post">
+
+				<label>Ім'я:</label> <input type="text" name="userName" /> <br />
+				<br /> <label>Пароль:</label><input type="password"
+					name="userPass1" /><br /> <br /> <label>Повтори пароль:</label><input
+					type="password" name="userPass2" /><br /> <br /> <label>Електронна
+					пошта:</label><input type="text" name="userEmail" /><br /> <br /> <label>Стать:</label><select
+					name="userSex">
+					<option>Жінка</option>
+					<option>Чоловік</option>
+				</select> <br /> <br /> <input type="submit" value="Зареєструватися!" />
+			</form>
+
+
+		</section>
 	</div>
 
 
@@ -94,7 +112,6 @@
 	<div id="footer">
 		<div class="container">
 			<div class="row">
-				твітер, можливо фотки
 				<section class="12u">
 					<header>
 						<h2 class="icon fa-camera circled">
@@ -103,33 +120,33 @@
 					</header>
 					<div class="row 25% no-collapse">
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev1.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev1.jpg" alt="" /></a>
 						</div>
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev6.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev6.jpg" alt="" /></a>
 						</div>
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev2.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev2.jpg" alt="" /></a>
 						</div>
-						
+
 					</div>
 					<div class="row 25% no-collapse">
-						
+
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev4.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev4.jpg" alt="" /></a>
 						</div>
-					
+
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev3.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev3.jpg" alt="" /></a>
 						</div>
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev5.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev5.jpg" alt="" /></a>
 						</div>
 
 					</div>

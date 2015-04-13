@@ -21,6 +21,48 @@
 	<link rel="stylesheet" href="css/style-noscript.css" />
 </noscript>
 <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+
+
+<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script>
+	$(function() {
+		$(".btn-slide").click(function() {
+			$("#panel").slideToggle("slow");
+			return false;
+		});
+	});
+</script>
+<style>
+#panel {
+	display: none;
+	padding: 5px;
+	height: 200px;
+	color: #696969;
+	width: 16em;
+	background: #fff;
+	text-align: center;
+	padding: 0 1em 3em 1em;
+	margin: 0 2em 0 0;
+	white-space: normal;
+	opacity: 1.0;
+	-moz-transition: opacity 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out;
+	-o-transition: opacity 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out;
+}
+
+.btn-slide {
+	color: #000000;
+}
+
+.active {
+	background: #FF9;
+}
+</style>
+
+
+
 </head>
 <body class="homepage">
 
@@ -31,7 +73,7 @@
 		<div class="inner">
 			<header>
 				<h1>
-					<a  id="logo"> Хочеш допомогти своєму місту? </a>
+					<a id="logo"> Хочеш допомогти своєму місту? </a>
 				</h1>
 				<hr />
 				<p>Все залежить від тебе.</p>
@@ -50,14 +92,12 @@
 						<li><a href="food.html">Поїсти</a></li>
 						<li><a href="rest.html">Відпочити</a></li>
 						<li><a href="#">Підменю</a></li>
-						<li><a >Здати -></a>
-							<ul>
-								<li><a  href="battery.html">Батарейки</a></li>
-								<li><a href="recycling.html">Вторсировина</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-							</ul></li>
-						
+						<li><a href="battery.html">Здати батарейки</a></li>
+						<li><a href="recycling.html">Здати вторсировину</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+
+
 					</ul></li>
 				<li><a href="reg.html">Реєстрація</a></li>
 				<li><a href="signin.html">Вхід</a></li>
@@ -78,16 +118,17 @@
 			</p>
 		</header>
 	</section> -->
-	
-<!-- Головне -->
-	<div class="wrapper style2">
+
+	<!-- Головне -->
+	<div class="wrapper style2" id="banner">
 
 		<article id="main" class="container special">
-			<a href="#" class="image featured"><img src="images/pic06.jpg"
-				alt="" /></a>
+		<!--	<a href="#" class="image featured"><img src="images/pic06.jpg"
+				alt="" /></a> -->
 			<header>
 				<h2>
-					Привіт! Тебе вітає студентська ініціатива <strong>"Збережи Київ"</strong>.
+					Привіт! Тебе вітає студентська ініціатива <strong>"Збережи
+						Київ"</strong>.
 				</h2>
 				<p>блаблабла привет.</p>
 			</header>
@@ -98,82 +139,90 @@
 		</article>
 
 	</div>
-	
+
 	<!-- Новини -->
+
 	<section class="carousel">
 		<div class="reel">
 
 			<article>
-				<a href="#" class="image featured"><img src="images/pic01.jpg"
+				<a href="#" class="image featured"><img src="images/header.jpg"
 					alt="" /></a>
-				<header>
-					<h3>
-						<a href="#">1</a>
-					</h3>
-				</header>
-				<p>блаблабла опис.</p>
+
+				<h3>
+					<a href="" class="btn-slide">новина</a>
+				</h3>
+
+				<p id="panel">блаблабла опис. олрамшв гвщашмио м ршкуршукрпм
+					шрмшкр рмпкшщувмшкщурпмкшм ао аумки укерк крортек рон ыцущао
+					купущопр щк5он рщдкоркеоп р</p>
 			</article>
 
 			<article>
-				<a href="#" class="image featured"><img src="images/pic02.jpg"
+				<a href="#" class="image featured"><img src="images/header.jpg"
 					alt="" /></a>
-				<header>
-					<h3>
-						<a href="#">2</a>
-					</h3>
-				</header>
-				<p>блаблабла опис.</p>
+				<h3>
+					<a href="" class="btn-slide">новина</a>
+				</h3>
+
+				<p id="panel">блаблабла опис. олрамшв гвщашмио м ршкуршукрпм
+					шрмшкр рмпкшщувмшкщурпмкшм ао аумки укерк крортек рон ыцущао
+					купущопр щк5он рщдкоркеоп р</p>
 			</article>
 
 			<article>
-				<a href="#" class="image featured"><img src="images/pic03.jpg"
+				<a href="#" class="image featured"><img src="images/header.jpg"
 					alt="" /></a>
-				<header>
-					<h3>
-						<a href="#">3</a>
-					</h3>
-				</header>
-				<p>блаблабла опис.</p>
+				<h3>
+					<a href="" class="btn-slide">новина</a>
+				</h3>
+
+				<p id="panel">блаблабла опис. олрамшв гвщашмио м ршкуршукрпм
+					шрмшкр рмпкшщувмшкщурпмкшм ао аумки укерк крортек рон ыцущао
+					купущопр щк5он рщдкоркеоп р</p>
 			</article>
 
 			<article>
-				<a href="#" class="image featured"><img src="images/pic04.jpg"
+				<a href="#" class="image featured"><img src="images/header.jpg"
 					alt="" /></a>
-				<header>
-					<h3>
-						<a href="#">4</a>
-					</h3>
-				</header>
-				<p>блаблабла опис.</p>
+				<h3>
+					<a href="" class="btn-slide">новина</a>
+				</h3>
+
+				<p id="panel">блаблабла опис. олрамшв гвщашмио м ршкуршукрпм
+					шрмшкр рмпкшщувмшкщурпмкшм ао аумки укерк крортек рон ыцущао
+					купущопр щк5он рщдкоркеоп р</p>
 			</article>
 
 			<article>
-				<a href="#" class="image featured"><img src="images/pic05.jpg"
+				<a href="#" class="image featured"><img src="images/header.jpg"
 					alt="" /></a>
-				<header>
-					<h3>
-						<a href="#">5</a>
-					</h3>
-				</header>
-				<p>блаблабла опис.</p>
+
+				<h3>
+					<a href="" class="btn-slide">новина</a>
+				</h3>
+
+				<p id="panel">блаблабла опис. олрамшв гвщашмио м ршкуршукрпм
+					шрмшкр рмпкшщувмшкщурпмкшм ао аумки укерк крортек рон ыцущао
+					купущопр щк5он рщдкоркеоп р</p>
 			</article>
 
 			<article>
-				<a href="#" class="image featured"><img src="images/pic01.jpg"
+				<a href="#" class="image featured"><img src="images/header.jpg"
 					alt="" /></a>
-				<header>
-					<h3>
-						<a href="#">6</a>
-					</h3>
-				</header>
-				<p>блаблабла опис.</p>
-			</article>
+				<h3>
+					<a href="" class="btn-slide">новина</a>
+				</h3>
 
+				<p id="panel">блаблабла опис. олрамшв гвщашмио м ршкуршукрпм
+					шрмшкр рмпкшщувмшкщурпмкшм ао аумки укерк крортек рон ыцущао
+					купущопр щк5он рщдкоркеоп р</p>
+			</article>
 
 		</div>
 	</section>
 
-	
+
 
 	<!-- Люди -->
 	<div class="wrapper style1">
@@ -204,7 +253,11 @@
 						</h3>
 						<a>Долучайся до нас.</a><br />
 					</header>
-						<header><h2><a href="reg.html"><br />Стати <br />волонтером!</a></h2></header>
+					<header>
+						<h2>
+							<a href="reg.html"><br />Стати <br />волонтером!</a>
+						</h2>
+					</header>
 				</article>
 
 				<article class="4u special">
@@ -214,7 +267,8 @@
 						<h3>
 							<a>Аня</a>
 						</h3>
-						<a>Чудовий організатор, має за плечами досвід не однієї еко-зустрічі</a>
+						<a>Чудовий організатор, має за плечами досвід не однієї
+							еко-зустрічі</a>
 					</header>
 				</article>
 
@@ -237,33 +291,33 @@
 					</header>
 					<div class="row 25% no-collapse">
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev1.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev1.jpg" alt="" /></a>
 						</div>
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev6.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev6.jpg" alt="" /></a>
 						</div>
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev2.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev2.jpg" alt="" /></a>
 						</div>
-						
+
 					</div>
 					<div class="row 25% no-collapse">
-						
+
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev4.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev4.jpg" alt="" /></a>
 						</div>
-					
+
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev3.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev3.jpg" alt="" /></a>
 						</div>
 						<div class="4u">
-							<a href="#" class="image fit"><img src="images/kiev/kiev5.jpg"
-								alt="" /></a>
+							<a href="#" class="image fit"><img
+								src="images/kiev/kiev5.jpg" alt="" /></a>
 						</div>
 
 					</div>
@@ -286,8 +340,7 @@
 									class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon fa-instagram"><span
 									class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-vk"><span 
-									class="label">ВКонтакте</span></a></li>
+							<li><a href="#" class="icon fa-vk"><span class="label">ВКонтакте</span></a></li>
 							<li><a href="#" class="icon fa-google"><span
 									class="label">Google</span></a></li>
 							<li><a href="#" class="icon fa-whatsapp"><span

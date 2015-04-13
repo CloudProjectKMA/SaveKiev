@@ -699,7 +699,7 @@ header .icon.circled {
 	position: relative;
 	display: inline-block;
 	margin: 0;
-	height: 21px;
+	height: 31px;
 	border-left: solid 1px rgba(192, 192, 192, 0.35);
 	border-right: solid 1px rgba(192, 192, 192, 0.35);
 }
@@ -727,6 +727,7 @@ header .icon.circled {
 }
 
 #nav>ul>li {
+	font-size: 1.25em;
 	display: inline-block;
 	margin: -9px 0.5em 0 0.5em;
 	border-radius: 0.5em;
@@ -932,7 +933,7 @@ header .icon.circled {
 	position: absolute;
 	top: 50%;
 	width: 6em;
-	height: 12em;
+	height: 29em;
 	margin-top: -6em;
 	cursor: pointer;
 }

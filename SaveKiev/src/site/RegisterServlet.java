@@ -8,9 +8,7 @@ import com.google.appengine.api.datastore.DatastoreServiceFactory;
 import com.google.appengine.api.datastore.Entity;
 
 public class RegisterServlet extends HttpServlet {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -21,7 +19,7 @@ public class RegisterServlet extends HttpServlet {
 
 		String n = request.getParameter("userName");
 		String p1 = request.getParameter("userPass1");
-		String p2 = request.getParameter("userPass2");		
+		String p2 = request.getParameter("userPass2");
 		String e = request.getParameter("userEmail");
 		String s = request.getParameter("userSex");
 
@@ -30,19 +28,18 @@ public class RegisterServlet extends HttpServlet {
 					.getDatastoreService();
 			Entity user = new Entity("User");
 			user.setProperty("Name", n);
-			
-			if(p1.equals(p2)){
-			user.setProperty("Password", p1);}
-			
-			user.setProperty("E-mail", e);
-			user.setProperty("Sex", s);
-			datastore.put(user);
-		response.sendRedirect("../my.html");
-			//out.print("You are successfully registered...");
+			if (p1.equals(p2)) {
+				user.setProperty("Password", p1);
+				user.setProperty("E-mail", e);
+				user.setProperty("Sex", s);
+				datastore.put(user);
+
+				response.sendRedirect("/my.html");
+				return;
+			}
 		} catch (Exception e2) {
 			System.out.println(e2);
 		}
 		out.close();
 	}
-
 }

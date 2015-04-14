@@ -362,6 +362,24 @@ form label {
 	width: 60%;
 }
 
+form label i {
+	display: block;
+	font-weight: 500;
+	color: #2F0505;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+form span {
+	display: block;
+	font-weight: 500;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	width: 60%;
+}
+
 form input[type="text"], form input[type="email"], form input[type="password"],
 	form select, form textarea {
 	margin-left: auto;
@@ -465,15 +483,11 @@ table.default tfoot {
 }
 
 /* Button */
-
-
-
-input[type="button"],input[type="submit"], input[type="reset"], .button
+input[type="button"], input[type="submit"], input[type="reset"], .button
 	{
 	margin-left: auto;
-    margin-right: auto;
-	width:20%;
-	
+	margin-right: auto;
+	width: 20%;
 	display: block;
 	background: #f24734;;
 	color: #fff;
@@ -638,6 +652,8 @@ header .icon.circled {
 
 .homepage #header h1 {
 	font-size: 4em;
+text-shadow: #ffffff 1px 0px, #ffffff 1px 1px, #ffffff 0px 1px, #ffffff -1px 1px, #ffffff
+		-1px 0px, #ffffff -1px -1px, #ffffff 0px -1px, #ffffff 1px -1px;
 }
 
 #header h1 a {
@@ -1037,4 +1053,128 @@ header .icon.circled {
 
 .carousel article p {
 	text-align: center;
+}
+
+/*********************************************************************************/
+/* My                                                                      */
+#panel1 {
+	display: none;
+	padding: 5px;
+	height: 33em;
+	color: #696969;
+	width: 16em;
+	background: #fff;
+	text-align: center;
+	padding: 0 1em 3em 1em;
+	margin: 0 2em 0 0;
+	white-space: normal;
+	opacity: 1.0;
+	-moz-transition: opacity 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out;
+	-o-transition: opacity 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out;
+}
+
+#panel2 {
+	display: none;
+	padding: 5px;
+	height: 37em;
+	color: #696969;
+	width: 16em;
+	background: #fff;
+	text-align: center;
+	padding: 0 1em 3em 1em;
+	margin: 0 2em 0 0;
+	white-space: normal;
+	opacity: 1.0;
+	-moz-transition: opacity 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out;
+	-o-transition: opacity 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out;
+}
+
+#panel3 {
+	display: none;
+	padding: 5px;
+	height: 27em;
+	color: #696969;
+	width: 16em;
+	background: #fff;
+	text-align: center;
+	padding: 0 1em 3em 1em;
+	margin: 0 2em 0 0;
+	white-space: normal;
+	opacity: 1.0;
+	-moz-transition: opacity 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out;
+	-o-transition: opacity 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out;
+}
+
+#panel4 {
+	display: none;
+	padding: 5px;
+	height: 44em;
+	color: #696969;
+	width: 16em;
+	background: #fff;
+	text-align: center;
+	padding: 0 1em 3em 1em;
+	margin: 0 2em 0 0;
+	white-space: normal;
+	opacity: 1.0;
+	-moz-transition: opacity 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out;
+	-o-transition: opacity 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out;
+}
+
+#panel5 {
+	display: none;
+	padding: 5px;
+	height: 37em;
+	color: #696969;
+	width: 16em;
+	background: #fff;
+	text-align: center;
+	padding: 0 1em 3em 1em;
+	margin: 0 2em 0 0;
+	white-space: normal;
+	opacity: 1.0;
+	-moz-transition: opacity 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out;
+	-o-transition: opacity 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out;
+}
+
+#panel6 {
+	display: none;
+	padding: 5px;
+	height: 46em;
+	color: #696969;
+	width: 16em;
+	background: #fff;
+	text-align: center;
+	padding: 0 1em 3em 1em;
+	margin: 0 2em 0 0;
+	white-space: normal;
+	opacity: 1.0;
+	-moz-transition: opacity 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out;
+	-o-transition: opacity 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out;
+}
+
+.btn-slide {
+	color: #000000;
+}
+
+.active {
+	background: #FF9;
 }

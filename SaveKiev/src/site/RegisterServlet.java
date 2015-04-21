@@ -28,13 +28,23 @@ public class RegisterServlet extends HttpServlet {
 					.getDatastoreService();
 			Entity user = new Entity("User");
 			user.setProperty("Name", n);
+			
+			 Cookie nameCookie = new Cookie("user",n);
+			 Cookie mailCookie = new Cookie("mail",e);
+			//Cookie sexCookie = new Cookie("sex",s);
 			if (p1.equals(p2)) {
 				user.setProperty("Password", p1);
 				user.setProperty("E-mail", e);
 				user.setProperty("Sex", s);
 				datastore.put(user);
-
-				response.sendRedirect("/my.html");
+				
+				nameCookie.setMaxAge(30*60);
+	            response.addCookie(nameCookie);
+	            mailCookie.setMaxAge(30*60);
+	            response.addCookie(mailCookie);
+	        //    sexCookie.setMaxAge(30*60);
+	         //   response.addCookie(sexCookie);
+				response.sendRedirect("/my.jsp");
 				return;
 			}
 		} catch (Exception e2) {

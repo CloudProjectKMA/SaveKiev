@@ -391,7 +391,7 @@ form input[type="text"], form input[type="email"], form input[type="password"],
 	width: 60%;
 	border-radius: 0.35em;
 	border: solid 1px #E5E5E5;
-	padding: 1em;
+	padding: 0.70em;
 	-moz-transition: background-color 0.35s ease-in-out, border-color 0.35s
 		ease-in-out;
 	-webkit-transition: background-color 0.35s ease-in-out, border-color
@@ -648,6 +648,8 @@ header .icon.circled {
 	color: #006400;
 	font-size: 3em;
 	line-height: 1em;
+	text-shadow: #ffffff 1px 0px, #ffffff 1px 1px, #ffffff 0px 1px, #ffffff -1px 1px, #ffffff
+		-1px 0px, #ffffff -1px -1px, #ffffff 0px -1px, #ffffff 1px -1px;
 }
 
 .homepage #header h1 {

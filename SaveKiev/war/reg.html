@@ -271,9 +271,9 @@ $(document).ready(function() {
 				<label>Нік: <i>(латинські літери та цифри)</i> </label> <input type="text" name="userName" id="nick"/><span
 					id="nickN"></span> <br />
 				<br /> 
-				<label>Пароль: <i>(латинські літери та цифри)</i> </label><input type="password" name="userPass1" id="pw1" /><span
+				<label>Пароль: <i>(латинські літери та цифри)</i> </label><input type="password" name="userPass1" id="pw1" placeholder="5-20 символів"/><span
 					id="hardPass"></span><br /> <br /> 
-				<label>Повтори пароль:</label><input type="password" name="userPass2" id="pw2" placeholder="5-20 символів" /><span
+				<label>Повтори пароль:</label><input type="password" name="userPass2" id="pw2"  /><span
 					id="valPass"></span><br /> <br /> 
 				
 					<label>Електронна	пошта:</label> <input type="text" name="userEmail" id="email" /><span
@@ -281,8 +281,8 @@ $(document).ready(function() {
 					
 					<label>Стать:</label><select
 					name="userSex">
-						<option>Жінка</option>
-						<option>Чоловік</option>
+						<option id="w" value="Жінка">Жінка</option>
+						<option id="m" value="Чоловік">Чоловік</option>
 				</select> <br /> <br /> <input type="submit" id="registr"
 					value="Зареєструватися!" />
 			</form>

@@ -618,7 +618,7 @@ header .icon.circled {
 
 .homepage #header .overlay {
 	content: '';
-	background: #1C0920;
+	background: #003300;
 	display: block;
 	position: absolute;
 	left: 0;
@@ -760,6 +760,7 @@ text-shadow: #ffffff 1px 0px, #ffffff 1px 1px, #ffffff 0px 1px, #ffffff -1px 1px
 }
 
 #nav>ul>li.active {
+	color:#003300;
 	border-color: rgba(192, 192, 192, 0.35);
 }
 
@@ -989,7 +990,7 @@ text-shadow: #ffffff 1px 0px, #ffffff 1px 1px, #ffffff 0px 1px, #ffffff -1px 1px
 	position: absolute;
 	top: 50%;
 	margin: -1.5em 0 0 0;
-	background: url('images/arrow.svg') no-repeat center center;
+	background: url('css/images/arrow.svg') no-repeat center center;
 }
 
 .carousel .forward:after {

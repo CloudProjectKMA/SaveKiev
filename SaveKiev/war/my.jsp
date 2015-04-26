@@ -48,7 +48,6 @@ pageEncoding="utf-8"%>
 						<li><a href="rest.html">Відпочити</a></li>
 						<li><a href="battery.html">Здати батарейки</a></li>
 						<li><a href="recycling.html">Здати вторсировину</a></li>
-						<li><a href="#">3</a></li>
 					</ul></li>
 				<li><a href="events.html">Події</a></li>
 				<li><a href="my.html">Моя сторінка</a></li>
@@ -151,14 +150,14 @@ pageEncoding="utf-8"%>
 							 } 
 							%>
 							<h2>
-								<a href="#"></a>Це твоя анкета. Вітаємо!
+								<a href="#"></a>Це твій профіль. Вітаємо!
 							</h2>
 							<p>Будь активним та не сумуй :)</p>
 						</header>
 						<section>
 							<header>
 							<p> Про мене:</p> 						
-							<h3><srtong>Нікнейм: </strong><i> <%=userName %></i></h3>
+							<h3><srtong>Нікнейм: </strong> <i> <%=userName %></i></h3>
 							<p></p>
 							<h3><srtong>Пошта: </strong> <i><%=userMail %></i></h3>
 							<p></p>
